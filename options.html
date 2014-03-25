@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Options for Drag To Go</title>
+	<link rel="stylesheet" href="options.css" />
+	<script src="common.js"></script>
+	<script src="options.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Options for Drag To Go</h1>
+		<p>Drag a link to open or drag a text to search, press <kbd>Esc</kbd> to cancel current operation.</p>
+	</header>
+	<section>
+		<figure>
+			<figcaption>New Tab Status</figcaption>
+			<div><input type="radio" id="foreground" name="tabStatus" value="FORE" /><label for="foreground">Always Foreground</label></div>
+			<div><input type="radio" id="background" name="tabStatus" value="BACK" /><label for="background">Always Background</label></div>
+			<div><input type="radio" id="foreOrBack" name="tabStatus" value="AUTO" /><label for="foreOrBack">Drag UP in Foreground, DOWN in Background. (ONLY for links)</label></div>
+		</figure>
+		<figure>
+			<figcaption>Search Engines</figcaption>
+			<div>
+				<label for="topLeft">TOP LEFT</label>
+				<select id="topLeft"></select>
+				<input type="text" value="" disabled="disabled" />
+			</div>
+			<div>
+				<label for="topRight">TOP RIGHT</label>
+				<select id="topRight"></select>
+				<input type="text" value="" disabled="disabled" />
+			</div>
+			<div>
+				<label for="bottomLeft">BOTTOM LEFT</label>
+				<select id="bottomLeft"></select>
+				<input type="text" value="" disabled="disabled" />
+			</div>
+			<div>
+				<label for="bottomRight">BOTTOM RIGHT</label>
+				<select id="bottomRight"></select>
+				<input type="text" value="" disabled="disabled" />
+			</div>
+		</figure>
+	</section>
+	<footer>
+		<button id="btnSave">Save</button>
+		<button id="btnReset">Reset</button>
+	</footer>
+</body>
+</html>
